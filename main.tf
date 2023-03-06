@@ -4,13 +4,13 @@ module "lambda_layers" {
   layers = [
     {
       layer_name         = "my_layer_1"
-      compatible_runtimes = ["nodejs12.x"]
+      compatible_runtimes = ["python3.8"]
       s3_bucket          = "bskhatrig-testing"
       s3_key             = "layers/function1.zip"
     },
     {
       layer_name         = "my_layer_2"
-      compatible_runtimes = ["nodejs12.x", "python3.8"]
+      compatible_runtimes = ["python3.8"]
       s3_bucket          = "bskhatrig-testing"
       s3_key             = "layers/function2.zip"
     }
