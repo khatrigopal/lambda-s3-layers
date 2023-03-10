@@ -10,11 +10,3 @@ resource "aws_lambda_layer_version" "layer" {
   s3_key             = var.layers[count.index].s3_key
 }
 
-output "layers" {
-  value = [
-    for layer in aws_lambda_layer_version.layer :
-    {
-      arn = layer.arn
-    }
-  ]
-}
