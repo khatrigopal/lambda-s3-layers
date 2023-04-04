@@ -1,6 +1,5 @@
 name: Terraform GitHub Actions
 
-
 on:
    push:
     branches: [main]
